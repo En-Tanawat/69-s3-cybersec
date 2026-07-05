@@ -1,13 +1,13 @@
 # Cyber Security
-## Hello Everyone
 
-### Information
-- Name: Tanawat Chitratta
+## Information
 
-### Topics
-- Linux
-- Networking
-- Cyber Security
-- Ethical Hacking
-- Digital Forensics
-- CTF
+* **Name:** Tanawat Chitratta
+* **Student ID:** 255
+
+## Expectations
+
+* เข้ข้าใจหลักการด้าน Cyber Security
+* พํัพัฒนาทักษะการป้องกันและวิเคราะห์ภัยคุกคาม
+* สามารถนำความรู้ไปประยุกต์ใช้ในการทำงานจริง
+
