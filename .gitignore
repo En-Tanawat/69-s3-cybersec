@@ -1,7 +1,9 @@
 # Environment files
 .env
 .env.*
+api.rest
 !.env.simple
+!api.rest.simple
 
 # Node
 node_modules/
