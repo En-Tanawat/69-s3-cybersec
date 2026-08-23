@@ -1,8 +1,10 @@
 # Environment files
 .env
 .env.*
-api.rest
 !.env.simple
+
+# REST API
+api.rest
 !api.rest.simple
 
 # Node
