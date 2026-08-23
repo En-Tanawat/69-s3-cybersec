@@ -15,7 +15,7 @@ services:
     image: dpage/pgadmin4:9.8
     container_name: 69-s3-admin
     ports:
-      - "5050:80"
+      - "8083:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
@@ -24,9 +24,9 @@ services:
 
   app:
     image: prawee/strapi
-    container_name: my_app
+    container_name: 69-s3-app
     ports:
-      - "${STRAPI_PORT}:1337"
+      - "9093:1337"
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
       DATABASE_NAME: ${DATABASE_NAME}
