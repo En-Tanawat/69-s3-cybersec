@@ -1,8 +1,8 @@
 # REST
 
-## Admin Section
+## 1. Admin Section
 
-###login
+### 1.1 Login
 POST http://localhost:9093/admin/login
 Content-Type: application/json
 
@@ -12,7 +12,7 @@ Content-Type: application/json
   "rememberMe": true
 }
 
-###Signup
+### 1.2 Signup
 //400 Bad Request Only 1 Super Admin 
 POST http://localhost:9093/admin/register-admin
 Content-Type: application/json
@@ -24,7 +24,7 @@ Content-Type: application/json
   "password": ""
 }
 
-###Forgot Password
+### 1.3 Forgot Password
 POST http://localhost:9093/admin/forgot-password
 Content-Type: application/json
 
@@ -32,15 +32,25 @@ Content-Type: application/json
   "email": ""
 }
 
-###Profile
+### 1.4 Reset Password
+POST http://localhost:9093/admin/reset-password
+Content-Type: application/json
+
+{
+  "code": "",
+  "password": "",
+  "passwordConfirmation": ""
+}
+
+### 1.5 Profile
 GET http://localhost:9093/admin/users/me 
 Content-Type: application/json
-Authorization: Bearer <Token>
+Authorization: Bearer 
 
 
-## User Section
+## 2. User Section
 
-###login
+### 2.1 Login
 POST http://localhost:9093/api/auth/local
 Content-Type: application/json
 
@@ -50,7 +60,7 @@ Content-Type: application/json
   "rememberMe": true
 }
 
-###Signup
+### 2.2 Signup
 POST http://localhost:9093/api/auth/local/register
 Content-Type: application/json
 
@@ -60,7 +70,7 @@ Content-Type: application/json
   "password": ""
 }
 
-###Forgot Password
+### 2.3 Forgot Password
 POST http://localhost:9093/api/auth/forgot-password
 Content-Type: application/json
 
@@ -68,8 +78,17 @@ Content-Type: application/json
   "email": ""
 }
 
-###Profile
+### 2.4 Reset Password
+POST http://localhost:9093/api/auth/reset-password
+Content-Type: application/json
+
+{
+  "code": "",
+  "password": "",
+  "passwordConfirmation": ""
+}
+
+### 2.5 Profile
 GET http://localhost:9093/api/users/me
 Content-Type: application/json
-Authorization: Bearer <Token>
-
+Authorization: Bearer
