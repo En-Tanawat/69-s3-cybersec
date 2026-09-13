@@ -8,6 +8,7 @@ api.rest
 !api.rest.simple
 
 # Python
+tests/
 __pycache__/
 *.pyc
 
