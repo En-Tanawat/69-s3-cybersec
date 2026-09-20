@@ -7,6 +7,11 @@
 api.rest
 !api.rest.simple
 
+# Python
+tests/
+__pycache__/
+*.pyc
+
 # Node
 node_modules/
 npm-debug.log*
